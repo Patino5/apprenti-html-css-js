@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .intro {
+            color: green;
+            font-size: 16px;
+        }
+        #myButton {
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 10px;
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to My First HTML Page</h1>
+    <p class="intro">This is a simple HTML page to practice basic HTML elements. We are learning how to use headings, paragraphs,
+        list, and images.</p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    <p>Here is an image to illustrate the use of the <code>&lt;img&gt;</code> tag in HTML.</p>
+
+    <p id="special" style="color: blue; font-size: 20px;">This paragraph has special styling.</p>
+
+    <blockquote cite="https://www.goodreads.com/quotes/tag/programming">
+        <p>Any fool can write code that a computer can understand. Good programmers
+        write code that humans can understand.</p>
+        <footer>—Martin Fowler</footer>
+    </blockquote>
+
+    <p>Below is a description list <code>&lt;dl&gt;</code> it encloses terms <code>&lt;dt&gt;</code> and details <code>&lt;dd&gt;</code> Used most often in dictionary or glossary type layouts.</p> 
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    </dl>
+
+    <p>figure tag <code>&lt;figure&gt;</code> used below the encloses a preformatted tag. <code>&lt;pre&gt;</code> Followed by a <code>&lt;figcaption&gt;</code> </p>
+    <figure>
+        <pre>
+            Roses are red.
+            Violets are blue.
+            I can't rhyme.
+            Banana.
+        </pre>
+        <figcaption>A failed attempt at a poem</figcaption>
+    </figure>
+    
+    <fieldset>
+        <legend>What is your favorite color?</legend>
+
+        <input type="radio" id="blue" name="color">
+        <label for="blue">Blue</label><br/>
+
+        <input type="radio" id="green" name="color">
+        <label for="green">Green</label><br/>
+
+        <input type="radio" name="color" id="red">
+        <label for="red">Red</label>
+    </fieldset>
+
+    <p>HTML5 Content Separator</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;address&gt;</code></td>
+                <td>Used to wrap content that contains contact information for an individual or organization.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;aside&gt;</code></td>
+                <td>Wraps elements that are only indirectly related to the document's main content, often used for sidebars or call-out boxes.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;footer&gt;</code></td>
+                <td>Denotes the footer of a document, which typically contains copyright notices or similar content.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;header&gt;</code></td>
+                <td>Contains introductory content such as a logo or author information for a section or article.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;nav&gt;</code></td>
+                <td>Contains navigation links, often presented as an unstyled list in a top bar or sidebar.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;main&gt;</code></td>
+                <td>Holds the primary content of the document. There should only be one <code>&lt;main&gt;</code> per page, and it typically excludes headers, footers, and navigation.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;article&gt;</code></td>
+                <td>Wraps content that can stand alone and be distributed independently, like blog or forum posts.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;section&gt;</code></td>
+                <td>Used to group related content under a heading. For example, organizing departments and their employees.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

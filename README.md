@@ -3,11 +3,11 @@ Projects from Apprenti Course
 
 # Learning Project Repository
 ## Topics Covered
-### Module 1: Introduction to [Topic Name]
-- Summary of what was covered...
-- Key concepts learned...
-- Any additional notes...
-### Module 2: Advanced [Topic Name]
-- Summary of what was covered...
-- Key concepts learned...
-- Any additional notes...
+### Module 1: Introduction to Web Basics
+- HTML Intro
+- Basic HTML Structure
+- Intro to CSS
+### Module 2: Intro to HTML
+- HTML Elements
+- Block Elements
+    * 

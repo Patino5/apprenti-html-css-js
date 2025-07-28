@@ -11,22 +11,24 @@
         body {
             font-family: Arial, sans-serif;
         }
+
         .intro {
             color: green;
             font-size: 16px;
         }
+
         #myButton {
             background-color: yellow;
             border: 2px solid black;
             padding: 10px;
         }
- 
     </style>
 </head>
 
 <body>
     <h1>Welcome to My First HTML Page</h1>
-    <p class="intro">This is a simple HTML page to practice basic HTML elements. We are learning how to use headings, paragraphs,
+    <p class="intro">This is a simple HTML page to practice basic HTML elements. We are learning how to use headings,
+        paragraphs,
         list, and images.</p>
 
     <ul>
@@ -42,11 +44,13 @@
 
     <blockquote cite="https://www.goodreads.com/quotes/tag/programming">
         <p>Any fool can write code that a computer can understand. Good programmers
-        write code that humans can understand.</p>
+            write code that humans can understand.</p>
         <footer>—Martin Fowler</footer>
     </blockquote>
 
-    <p>Below is a description list <code>&lt;dl&gt;</code> it encloses terms <code>&lt;dt&gt;</code> and details <code>&lt;dd&gt;</code> Used most often in dictionary or glossary type layouts.</p> 
+    <p>Below is a description list <code>&lt;dl&gt;</code> it encloses terms <code>&lt;dt&gt;</code> and details
+        <code>&lt;dd&gt;</code> Used most often in dictionary or glossary type layouts.
+    </p>
     <dl>
         <dt>HTML</dt>
         <dd>Hypertext Markup Language</dd>
@@ -54,7 +58,8 @@
         <dd>Cascading Style Sheet</dd>
     </dl>
 
-    <p>figure tag <code>&lt;figure&gt;</code> used below the encloses a preformatted tag. <code>&lt;pre&gt;</code> Followed by a <code>&lt;figcaption&gt;</code> </p>
+    <p>figure tag <code>&lt;figure&gt;</code> used below the encloses a preformatted tag. <code>&lt;pre&gt;</code>
+        Followed by a <code>&lt;figcaption&gt;</code> </p>
     <figure>
         <pre>
             Roses are red.
@@ -64,15 +69,15 @@
         </pre>
         <figcaption>A failed attempt at a poem</figcaption>
     </figure>
-    
+
     <fieldset>
         <legend>What is your favorite color?</legend>
 
         <input type="radio" id="blue" name="color">
-        <label for="blue">Blue</label><br/>
+        <label for="blue">Blue</label><br />
 
         <input type="radio" id="green" name="color">
-        <label for="green">Green</label><br/>
+        <label for="green">Green</label><br />
 
         <input type="radio" name="color" id="red">
         <label for="red">Red</label>
@@ -94,11 +99,13 @@
             </tr>
             <tr>
                 <td><code>&lt;aside&gt;</code></td>
-                <td>Wraps elements that are only indirectly related to the document's main content, often used for sidebars or call-out boxes.</td>
+                <td>Wraps elements that are only indirectly related to the document's main content, often used for
+                    sidebars or call-out boxes.</td>
             </tr>
             <tr>
                 <td><code>&lt;footer&gt;</code></td>
-                <td>Denotes the footer of a document, which typically contains copyright notices or similar content.</td>
+                <td>Denotes the footer of a document, which typically contains copyright notices or similar content.
+                </td>
             </tr>
             <tr>
                 <td><code>&lt;header&gt;</code></td>
@@ -110,7 +117,8 @@
             </tr>
             <tr>
                 <td><code>&lt;main&gt;</code></td>
-                <td>Holds the primary content of the document. There should only be one <code>&lt;main&gt;</code> per page, and it typically excludes headers, footers, and navigation.</td>
+                <td>Holds the primary content of the document. There should only be one <code>&lt;main&gt;</code> per
+                    page, and it typically excludes headers, footers, and navigation.</td>
             </tr>
             <tr>
                 <td><code>&lt;article&gt;</code></td>
@@ -118,7 +126,8 @@
             </tr>
             <tr>
                 <td><code>&lt;section&gt;</code></td>
-                <td>Used to group related content under a heading. For example, organizing departments and their employees.</td>
+                <td>Used to group related content under a heading. For example, organizing departments and their
+                    employees.</td>
             </tr>
         </tbody>
     </table>
@@ -132,9 +141,11 @@
     </map>
     <p>Areas can have three different shapes:</p>
     <ul>
-        <li>rect - A rectangle with coordinates x1, y1, x2, y2 which denote the top-left and bottom-right corners respectively.</li>
+        <li>rect - A rectangle with coordinates x1, y1, x2, y2 which denote the top-left and bottom-right corners
+            respectively.</li>
         <li>circle - A circle that takes 3 values: x, y, radius. x,y is the center of the circle.</li>
-        <li>poly - A polygon is defined by any number of coordinates: x1,y1,...xn, . The last coordinate should be the same as the first to close the polygon.</li>
+        <li>poly - A polygon is defined by any number of coordinates: x1,y1,...xn, . The last coordinate should be the
+            same as the first to close the polygon.</li>
     </ul>
 
     <h3>Video Attributes</h3>
@@ -142,9 +153,165 @@
         <source src="videos/hello.mp4" type="video/mp4">
         <source src="videos/hello.webm" type="video/webm">
         <track kind="subtitles" src="videos/hello_en.vtt">
-        <p>This element only shows up if the browser does not support HTML5 video. Use it to provide a download link or alternate instructions.</p>
+        <p>This element only shows up if the browser does not support HTML5 video. Use it to provide a download link or
+            alternate instructions.</p>
     </video>
 
+    <h2>Spanning Rows and Columns</h2>
+    <h3>rowspan</h3>
+    <table>
+        <tr>
+            <th>Element</th>
+            <th>Spell</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Fire</th>
+            <td>Burning Palm</td>
+        </tr>
+        <tr>
+            <td>Fireball</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Water</th>
+            <td>Healing Rain</td>
+        </tr>
+        <tr>
+            <td>Ice Block</td>
+        </tr>
+        <tr>
+            <td>Frost Orb</td>
+        </tr>
+    </table>
+
+    <h3>colspan</h3>
+    <table>
+        <tr>
+            <th></th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+        </tr>
+        <tr>
+            <th>Electronics</th>
+            <td>$35M</td>
+            <td>$33M</td>
+            <td>$37M</td>
+            <td>$40M</td>
+        </tr>
+        <tr>
+            <th>Clothing</th>
+            <td>$20M</td>
+            <td>$23M</td>
+            <td>$18M</td>
+            <td>$27M</td>
+        </tr>
+        <tr>
+            <th>Furniture</th>
+            <td>$15M</td>
+            <td>$17M</td>
+            <td>$13M</td>
+            <td>$15M</td>
+        </tr>
+        <tr>
+            <th colspan="4">Total Revenue:</th>
+            <td>$293M</td>
+        </tr>
+    </table>
+    <h2 style="color: blue;">Styling with &lt;colgroup&gt;</h2>
+    <table>
+        <colgroup>
+            <col>
+            </col>
+            <col style="background-color: red">
+            </col>
+            <col span="4">
+            <col style="background-color: green" span="2">
+            </col>
+        </colgroup>
+        <tr>
+            <th></th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>R</th>
+            <th>F</th>
+            <th>S</th>
+            <th>S</th>
+        </tr>
+        <tr>
+            <th>Week 1</th>
+            <td>Assessment</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Week 2</th>
+            <td>Assessment</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Week 3</th>
+            <td>Assessment</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td>Learning</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <h2>Captions, Heads, Bodies, and Footers</h2>
+    <table>
+        <caption>2020 revenue projections</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th>Q4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Electronics</th>
+                <td>$35M</td>
+                <td>$33M</td>
+                <td>$37M</td>
+                <td>$40M</td>
+            </tr>
+            <tr>
+                <th>Clothing</th>
+                <td>$20M</td>
+                <td>$23M</td>
+                <td>$18M</td>
+                <td>$27M</td>
+            </tr>
+            <tr>
+                <th>Furniture</th>
+                <td>$15M</td>
+                <td>$17M</td>
+                <td>$13M</td>
+                <td>$15M</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Total Revenue:</th>
+                <td>$293M</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 
 </html>

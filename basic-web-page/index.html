@@ -122,6 +122,28 @@
             </tr>
         </tbody>
     </table>
+    <h3>Maps and Areas</h3>
+
+    <img src="north-america.png" width="300" height="300" alt="Clickable map of North America" usemap="#na-map">
+    <map name="na-map">
+        <area shape="rect" coords="0,0,300,100" href="canada.html" alt="Sun">
+        <area shape="rect" coords="0,100,300,200" href="usa.html" alt="Mercury">
+        <area shape="rect" coords="0,200,300,300" href="mexico.html" alt="Venus">
+    </map>
+    <p>Areas can have three different shapes:</p>
+    <ul>
+        <li>rect - A rectangle with coordinates x1, y1, x2, y2 which denote the top-left and bottom-right corners respectively.</li>
+        <li>circle - A circle that takes 3 values: x, y, radius. x,y is the center of the circle.</li>
+        <li>poly - A polygon is defined by any number of coordinates: x1,y1,...xn, . The last coordinate should be the same as the first to close the polygon.</li>
+    </ul>
+
+    <h3>Video Attributes</h3>
+    <video controls width="800" height="600" autoplay loop muted poster="images/hello-the-movie.png">
+        <source src="videos/hello.mp4" type="video/mp4">
+        <source src="videos/hello.webm" type="video/webm">
+        <track kind="subtitles" src="videos/hello_en.vtt">
+        <p>This element only shows up if the browser does not support HTML5 video. Use it to provide a download link or alternate instructions.</p>
+    </video>
 
 </body>
 

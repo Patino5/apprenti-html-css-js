@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+    
+</head>
+
+<body>
+    <form action="/submit-form" method="post">
+        <fieldset>
+            <legend>Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required><br>
+            <label for="reason">Reason for Contact:</label>
+            <select name="reason" id="">
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Business-Inquiry">Business-Inquiry</option>
+            </select><br>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+            <label for="topic">Topic:</label>
+            <input list="topics" id="topic" name="topic" placeholder="Type or choose a topic">
+            <datalist id="topics">
+                <option value="Website Performance">
+                <option value="Login Issue">
+                <option value="Pricing Plans">
+                <option value="Feature Request">
+            </datalist>
+            <button type="submit">Send Message</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* General Style for all boxes */
+.box {
+   width: 200px;
+height: 100px;
+display: inline-block;
+text-align: center;
+line-height: 100px; /* Center text vertically */
+color: white;
+font-weight: bold;
+font-family: Arial, sans-serif;
+}
+/* Styles for Box 1 */
+.box1 {
+background-color: #4CAF50; /* Green */
+margin: 10px;
+padding: 20px;
+border: 5px solid #2E8B57; /* Darker green */
+border-radius: 25px 0 100px 50px;
+}
+/* Styles for Box 2 */
+.box2 {
+background-color: #FFC107; /* Amber */
+margin: 20px;
+padding: 30px;
+border: 10px dashed #FF5722; /* Deep orange */
+box-shadow: inset 5px 5px 10px  grey;
+}
+/* Styles for Box 3 */
+.box3 {
+background-color: #2196F3; /* Blue */
+margin: 30px;
+padding: 40px;
+border: 15px dotted #0D47A1; /* Darker blue */
+}
+
+h1, p {
+background-color: #2E8B57;
+padding: 5px;
+border: solid 5px red;
+display: inline-block;
+}
+
+span, a {
+    display: block;
+    background-color: #FF5722;
+    padding: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid;
+    margin: 0px -10px 0px 20px;
+    background-color: #0D47A1;
+}
+
+.flex {
+    display: flexbox;
+}
+
+.content {
+    box-sizing: content-box;
+}
+
+.border {
+    box-sizing: border-box;
+}
+
+.custom {
+list-style-image: url('./images/favicon-16x16.png');
+list-style-position: inside;
+}

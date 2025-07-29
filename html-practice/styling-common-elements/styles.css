@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: "Trebuchet MS", Arial, Sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.styled-text {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.highlight {
+    color: red;
+}
+
+.layout-text {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Lists */
+.styled-list {
+    list-style-image: url('../images/favicon-16x16.png');
+    list-style-position: inside;
+    line-height: 2;
+}
+
+/* Links */
+.custom-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+}
+
+.custom-link:focus {
+    outline: 2px solid orange;
+}
+
+.custom-link:active {
+    color: red;
+}
+
+/* Images */
+.image-frame {
+    width: 300px;
+    border: 2px solid blue;
+    padding: 5px;
+    overflow: hidden; /* Prevents image overflow */
+}
+
+.image-frame img {
+    width: 100%;
+    height: auto;
+}

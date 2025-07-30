@@ -35,7 +35,7 @@ document.querySelector('.container').appendChild(changeBgColorBtn);
 
 changeBgColorBtn.addEventListener('click', () => {
     const body = document.querySelector('body');
-    let colors = ["primary", "secondary", "success", "danger", "warning", "info"];
+    let colors = ["primary", "secondary", "success", "danger", "warning", "info", ""];
     body.className = `bg-${colors[Math.floor(Math.random() * colors.length)]}`;
 })
 
@@ -48,5 +48,8 @@ addListItemBtn.addEventListener('click', () => {
     const list = document.querySelector('ul');
     const listItem = document.createElement('li');
     listItem.innerText = "new item";
+    listItem.addEventListener('click', () => {
+        listItem.remove();
+    })
     list.appendChild(listItem);
 })
